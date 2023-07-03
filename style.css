@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+
+  display: grid;
+  place-content: center;
+
+  background: #001c30; /* fallback for old browsers */
+
+  & h1,
+  h2 {
+    margin: 0 auto;
+    color: #dafffb;
+  }
+  & h2 {
+    margin-bottom: 30px;
+  }
+
+  #card {
+    width: 300px;
+    height: 470px;
+    border-radius: 10px;
+    padding: 15px;
+    overflow: hidden;
+
+    background-color: #27374d;
+    box-shadow: 0px 6px 15px 5px rgba(0, 2, 37, 0.753);
+
+    & img {
+      width: 100%;
+      border-radius: 7.5px;
+      transition: all 350ms;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    & h3 {
+      cursor: pointer;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 600;
+      margin: 5px 0;
+      transition: color 200ms;
+
+      &:hover {
+        color: #97e5ff;
+      }
+    }
+
+    & p {
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 400;
+      color: #176b87;
+    }
+
+    & #info {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0;
+
+      & span:first-child {
+        cursor: pointer;
+        color: #dafffb;
+        font-weight: 400;
+        transition: color 200ms;
+
+        &:hover {
+          color: #97e5ff;
+        }
+      }
+
+      & span:nth-child(2) {
+        color: #176b87;
+        font-size: 12px;
+      }
+      & span:nth-child(2)::before {
+        content: "•";
+        font-weight: 600;
+        padding: 5px;
+      }
+    }
+
+    & #owner {
+      width: 100%;
+      margin: 20px 0;
+      padding: 10px 0 0 0;
+
+      display: flex;
+      align-items: center;
+
+      border-top: 1px solid #dafffb;
+
+      & img {
+        width: 24px;
+        filter: drop-shadow(3px 2px 5px rgba(50, 54, 116, 0.651));
+      }
+      & span {
+        color: #176b87;
+        font-size: 12px;
+        font-weight: 400;
+        padding: 0 10px;
+      }
+    }
+  }
+}
